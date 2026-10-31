@@ -1,24 +1,24 @@
 <div align="center">
-  <a href="#user-content-stats"><img src="assets/hero.svg?v=1" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
+  <a href="#user-content-stats"><img src="assets/hero.svg?v=202610310921" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
 </div>
 
-<a id="stats" href="#user-content-stats"><img src="assets/h-stats.svg?v=1" alt="GitHub stats" width="100%"/></a>
+<a id="stats" href="#user-content-stats"><img src="assets/h-stats.svg?v=202610310921" alt="GitHub stats" width="100%"/></a>
 
-<img src="assets/player-card.svg?v=1" alt="Git stats: contributions, commits, pull requests, issues, repos, stars, streak and top languages" width="100%"/>
+<img src="assets/player-card.svg?v=202610310921" alt="Git stats: contributions, commits, pull requests, issues, repos, stars, streak and top languages" width="100%"/>
 
-<img src="assets/h-map.svg?v=1" alt="Contribution graph" width="100%"/>
+<img src="assets/h-map.svg?v=202610310921" alt="Contribution graph" width="100%"/>
 
-<img src="assets/world-map.svg?v=1" alt="My real contribution graph morphing into my name" width="100%"/>
+<img src="assets/world-map.svg?v=202610310921" alt="My real contribution graph morphing into my name" width="100%"/>
 
 <sub>↑ my real contribution graph. wait a few seconds, the cat shows up.</sub>
 
-<img src="assets/h-inventory.svg?v=1" alt="Inventory" width="100%"/>
+<img src="assets/h-inventory.svg?v=202610310921" alt="Inventory" width="100%"/>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=ts,js,python,html,css,react,nodejs,git,github,vscode&perline=10" alt="Tech stack"/>
 </p>
 
-<img src="assets/h-quests.svg?v=1" alt="Quest log" width="100%"/>
+<img src="assets/h-quests.svg?v=202610310921" alt="Quest log" width="100%"/>
 
 | QUEST | STATUS | REWARD |
 |---|:-:|:-:|
@@ -27,7 +27,7 @@
 | 🐛 [**autodump_caterpillar**](https://github.com/preethikakumaravel/autodump_caterpillar)<br/><sub>a little HTML build, peek inside</sub> | 🟨 SIDE QUEST | ⭐⭐ |
 | 🧠 **AI agents & memory systems** | ⬜ LOADING… | ❔ |
 
-<img src="assets/h-continue.svg?v=1" alt="Continue?" width="100%"/>
+<img src="assets/h-continue.svg?v=202610310921" alt="Continue?" width="100%"/>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/preethika-kumaravel-57266034a/"><img src="https://img.shields.io/badge/▶_CONNECT-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
