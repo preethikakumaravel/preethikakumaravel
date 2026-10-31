@@ -24,6 +24,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/
+          # bump ?v= on image links so GitHub's image cache fetches the new files
+          sed -i -E "s#(assets/[a-z-]+\.svg)(\?v=[0-9]+)?\"#?v=$(date +%Y%m%d%H%M)\"#g" README.md
+          git add assets/ README.md
           git diff --cached --quiet || git commit -m "chore: refresh pixel profile assets"
           git push
