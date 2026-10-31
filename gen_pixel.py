@@ -8,7 +8,6 @@ Set GITHUB_TOKEN for real stats (otherwise demo numbers). Standard library only.
 import argparse
 import datetime
 import json
-import math
 import os
 import random
 import urllib.request
@@ -210,34 +209,27 @@ def bar(x, y, frac, blocks, col, bs=12):
 
 
 def player_card(stats, player):
-    H = 270
+    H = 290
     p = [f'<rect x="0" y="0" width="{W}" height="{H}" fill="{PANEL}"/>', pixel_frame(W, H, GREEN)]
-    xp = stats["total"]
-    level = int(math.sqrt(xp / 2)) + 1
-    lo, hi = 2 * (level - 1) ** 2, 2 * level ** 2
     rows = [
-        ("PLAYER", player),
-        ("LEVEL", f"{level}"),
-        ("XP", f"{xp}"),
-        ("QUESTS", f"{stats['repos']} REPOS"),
-        ("STARS", f"{stats['stars']}"),
+        ("USER", player),
+        ("CONTRIBUTIONS", f"{stats['total']}"),
+        ("COMMITS", f"{stats['commits']}"),
+        ("PULL REQUESTS", f"{stats['prs']}"),
+        ("ISSUES", f"{stats['issues']}"),
+        ("PUBLIC REPOS", f"{stats['repos']}"),
+        ("STARS EARNED", f"{stats['stars']}"),
         ("STREAK", f"{stats['streak']} DAYS"),
     ]
-    y = 36
-    p.append(text("STATS", 40, y - 4, 3, GOLD))
-    y += 36
+    p.append(text("GIT STATS", 40, 32, 3, GOLD))
+    y = 72
     for label, value in rows:
         p.append(text(label, 40, y, 2, MUTED))
-        p.append(text(value, 170, y, 2, INK))
-        if label == "XP":
-            p.append(bar(250, y, (xp - lo) / max(hi - lo, 1), 8, GREEN, 10))
-        y += 28
-    p.append(text("HP", 40, y, 2, MUTED))
-    for i in range(5):  # hearts = hours of sleep, roughly
-        p.append(text("♥", 170 + i * 16, y, 2, "#f85149" if i < 3 else "#30363d"))
+        p.append(text(value, 230, y, 2, INK))
+        y += 26
     # skills column
     sx = 460
-    p.append(text("SKILLS", sx, 32, 3, GOLD))
+    p.append(text("TOP LANGUAGES", sx, 32, 3, GOLD))
     langs = stats["langs"][:6]
     top = langs[0][1] if langs else 1
     for i, (lname, size, color) in enumerate(langs):
@@ -262,7 +254,7 @@ def world_map(grid, total, name):
     H = top + ROWS * (cell + gap) + 30
     on = name_mask(name)
     p = [f'<rect x="0" y="0" width="{W}" height="{H}" fill="{PANEL}"/>', pixel_frame(W, H, "#30363d")]
-    p.append(text(f"XP LOG : {total} CONTRIBUTIONS", px, 20, 2, GOLD))
+    p.append(text(f"{total} CONTRIBUTIONS IN THE LAST YEAR", px, 20, 2, GOLD))
     for c in range(COLS):
         for r in range(ROWS):
             lvl = grid[c][r]
@@ -291,7 +283,8 @@ def world_map(grid, total, name):
 
 def fetch_stats(user, token):
     query = """query($login:String!){user(login:$login){
-      contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{contributionCount date}}}}
+      contributionsCollection{totalCommitContributions totalPullRequestContributions totalIssueContributions
+        contributionCalendar{totalContributions weeks{contributionDays{contributionCount date}}}}
       repositories(ownerAffiliations:OWNER,isFork:false,privacy:PUBLIC,first:100){totalCount nodes{stargazerCount
         languages(first:10,orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}}}}}"""
     req = urllib.request.Request(
@@ -317,6 +310,9 @@ def fetch_stats(user, token):
             langs[n] = (prev[0] + e["size"], e["node"]["color"])
     return {
         "total": cal["totalContributions"],
+        "commits": u["contributionsCollection"]["totalCommitContributions"],
+        "prs": u["contributionsCollection"]["totalPullRequestContributions"],
+        "issues": u["contributionsCollection"]["totalIssueContributions"],
         "repos": u["repositories"]["totalCount"],
         "stars": sum(r["stargazerCount"] for r in u["repositories"]["nodes"]),
         "streak": streak,
@@ -324,7 +320,7 @@ def fetch_stats(user, token):
     }
 
 
-DEMO = {"total": 19, "repos": 4, "stars": 1, "streak": 2,
+DEMO = {"total": 19, "commits": 15, "prs": 3, "issues": 1, "repos": 4, "stars": 1, "streak": 2,
         "langs": [("TypeScript", 900, "#3178c6"), ("HTML", 600, "#e34c26"), ("Python", 400, "#3572A5"),
                   ("CSS", 200, "#663399"), ("JavaScript", 120, "#f1e05a")]}
 
@@ -346,8 +342,8 @@ def main():
         "hero.svg": hero(a.name, a.player, a.subtitle),
         "player-card.svg": player_card(stats, a.player),
         "world-map.svg": world_map(grid, total, a.name),
-        "h-stats.svg": header("PLAYER STATS", "♥"),
-        "h-map.svg": header("WORLD MAP", ">"),
+        "h-stats.svg": header("GITHUB STATS", "♥"),
+        "h-map.svg": header("CONTRIBUTION GRAPH", ">"),
         "h-inventory.svg": header("INVENTORY", "+"),
         "h-quests.svg": header("QUEST LOG", "*"),
         "h-continue.svg": header("CONTINUE?", "?"),

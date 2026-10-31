@@ -2,11 +2,11 @@
   <a href="#user-content-stats"><img src="assets/hero.svg" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
 </div>
 
-<a id="stats" href="#user-content-stats"><img src="assets/h-stats.svg" alt="Player stats" width="100%"/></a>
+<a id="stats" href="#user-content-stats"><img src="assets/h-stats.svg" alt="GitHub stats" width="100%"/></a>
 
-<img src="assets/player-card.svg" alt="Player card: level, XP, quests, stars, streak and top languages" width="100%"/>
+<img src="assets/player-card.svg" alt="Git stats: contributions, commits, pull requests, issues, repos, stars, streak and top languages" width="100%"/>
 
-<img src="assets/h-map.svg" alt="World map" width="100%"/>
+<img src="assets/h-map.svg" alt="Contribution graph" width="100%"/>
 
 <img src="assets/world-map.svg" alt="My real contribution graph morphing into my name" width="100%"/>
 
