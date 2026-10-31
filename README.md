@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="#stats"><img src="assets/hero.svg" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
+  <a href="#user-content-stats"><img src="assets/hero.svg" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
 </div>
 
-<a id="stats" href="#stats"><img src="assets/h-stats.svg" alt="Player stats" width="100%"/></a>
+<a id="stats" href="#user-content-stats"><img src="assets/h-stats.svg" alt="Player stats" width="100%"/></a>
 
 <img src="assets/player-card.svg" alt="Player card: level, XP, quests, stars, streak and top languages" width="100%"/>
 
