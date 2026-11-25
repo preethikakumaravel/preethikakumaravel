@@ -32,5 +32,4 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/preethika-kumaravel-57266034a/"><img src="https://img.shields.io/badge/▶_CONNECT-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <br/><br/>
-  <sub>INSERT COIN ⭐ to continue · every image here is generated daily by <a href="gen_pixel.py"><code>gen_pixel.py</code></a> from my real GitHub data</sub>
 </p>
