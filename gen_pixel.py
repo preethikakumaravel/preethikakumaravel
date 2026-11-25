@@ -167,7 +167,7 @@ def hero(name, player, subtitle):
         parts.append(g_)
         tx += text_width(ch, s) + s
     # subtitle lines
-    for txt, y, col in ((f"PLAYER 1 : {player}", 120, INK), (subtitle, 142, MUTED)):
+    for txt, y, col in ((f"Player : {player}", 120, INK), (subtitle, 142, MUTED)):
         parts.append(text(txt, (W - text_width(txt, 2)) // 2, y, 2, col))
     press = "> PRESS START"
     parts.append(text(press, (W - text_width(press, 3)) // 2, 178, 3, GOLD, 'class="blink"'))
