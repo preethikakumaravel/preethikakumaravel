@@ -1,24 +1,24 @@
 <div align="center">
-  <a href="#user-content-stats"><img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/hero.svg" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
+  <a href="#user-content-stats"><img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/hero.svg" alt="PREETHS: pixel night scene with a cat in headphones walking by. Press start to scroll down" width="100%"/></a>
 </div>
 
-<a id="stats" href="#user-content-stats"><img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/h-stats.svg" alt="GitHub stats" width="100%"/></a>
+<a id="stats" href="#user-content-stats"><img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/h-stats.svg" alt="GitHub stats" width="100%"/></a>
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/player-card.svg" alt="Git stats: contributions, commits, pull requests, issues, repos, stars, streak and top languages" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/player-card.svg" alt="Git stats: contributions, commits, pull requests, issues, repos, stars, streak and top languages" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/h-map.svg" alt="Contribution graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/h-map.svg" alt="Contribution graph" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/world-map.svg" alt="My real contribution graph morphing into my name" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/world-map.svg" alt="My real contribution graph morphing into my name" width="100%"/>
 
 <sub>↑ my real contribution graph. wait a few seconds, the cat shows up.</sub>
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/h-inventory.svg" alt="Inventory" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/h-inventory.svg" alt="Inventory" width="100%"/>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=ts,js,python,html,css,react,nodejs,git,github,vscode&perline=10" alt="Tech stack"/>
 </p>
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/h-quests.svg" alt="Quest log" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/h-quests.svg" alt="Quest log" width="100%"/>
 
 | QUEST | STATUS | REWARD |
 |---|:-:|:-:|
@@ -27,7 +27,7 @@
 | 🐛 [**autodump_caterpillar**](https://github.com/preethikakumaravel/autodump_caterpillar)<br/><sub>a little HTML build, peek inside</sub> | 🟨 SIDE QUEST | ⭐⭐ |
 | 🧠 **AI agents & memory systems** | ⬜ LOADING… | ❔ |
 
-<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/8337a2732ffeae015916e08a21c6dc48be11fe2d/assets/h-continue.svg" alt="Continue?" width="100%"/>
+<img src="https://raw.githubusercontent.com/preethikakumaravel/preethikakumaravel/6d0d6670f82ed8f160c41a3f61c3404d1521184f/assets/h-continue.svg" alt="Continue?" width="100%"/>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/preethika-kumaravel-57266034a/"><img src="https://img.shields.io/badge/▶_CONNECT-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
